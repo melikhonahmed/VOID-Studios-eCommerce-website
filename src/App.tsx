@@ -14,10 +14,14 @@ import { Community } from "./components/Community";
 import { Features } from "./components/Features";
 import { Newsletter } from "./components/Newsletter";
 import { Footer } from "./components/Footer";
+import { CustomCursor } from "./components/CustomCursor";
+import { NoiseOverlay } from "./components/NoiseOverlay";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5] antialiased selection:bg-[#E5E5E5] selection:text-[#0A0A0A]">
+    <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5] antialiased selection:bg-[#E5E5E5] selection:text-[#0A0A0A] cursor-auto md:cursor-none">
+      <CustomCursor />
+      <NoiseOverlay />
       <Navbar />
       <main>
         <Hero />
